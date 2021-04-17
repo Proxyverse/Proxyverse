@@ -19,9 +19,9 @@ The following example is built with Visual Studio, you can run it using these st
 
 1. Create a new Console Application.
 2. Using a terminal of your choice navigate to the projects directory.
-3. Run the cURL command to download the code or copy it directly from [here](https://raw.githubusercontent.com/Smartproxy/Smartproxy/master/csharp/csharp.cs): 
+3. Run the cURL command to download the code or copy it directly from [here](https://raw.githubusercontent.com/Proxyverse/Proxyverse/master/csharp/csharp.cs): 
 
-`curl https://raw.githubusercontent.com/Smartproxy/Smartproxy/master/csharp/csharp.cs > csharp.cs`
+`curl https://raw.githubusercontent.com/Proxyverse/Proxyverse/main/csharp/csharp.cs > csharp.cs`
 
 4. You should see a new file named csharp.cs in your project folder.
 
