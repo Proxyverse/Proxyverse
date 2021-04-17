@@ -29,7 +29,7 @@ The following example is built with Visual Studio, you can run it using these st
 
 To run this C# example, setup your username, password and endpoint you would like to use, change the according lines in within punctuation marks ('').
 
-<img src="https://i.imgur.com/BIoX2Jd.png" alt="C# proxy username password authentication example">
+<img src="https://i.imgur.com/lLZt2kU.png" alt="C# proxy username password authentication example">
 
 If you did everything correctly, you should see an IP appearing form our proxy server in the console window.
 
