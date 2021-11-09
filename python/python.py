@@ -13,5 +13,4 @@ proxyDict = {
   
 r = requests.get(url, proxies=proxyDict)
 
-print (https_proxy)
 print(r.text)
