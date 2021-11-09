@@ -1,7 +1,7 @@
 require('request-promise') ( { 
 
    url: 'https://ipinfo.io/ip', 
-   proxy: 'http://username:password@proxy.proxyverse.io:80' 
+   proxy: 'http://username:password@proxy.proxyverse.io:9200' 
 
 }).then( 
    function(data ){ 
