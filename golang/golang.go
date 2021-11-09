@@ -10,7 +10,7 @@ import (
 
 const (
 	resourceUrl = "https://ipinfo.io"
-	proxyHost   = "proxy.proxyverse.io:80"
+	proxyHost   = "proxy.proxyverse.io:9200"
 	username    = "username"
 	password    = "password"
 )
