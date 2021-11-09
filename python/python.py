@@ -1,11 +1,17 @@
-import urllib.request as request
+import requests
 
-url = 'https://ipinfo.io'
-username = 'username'
-password = 'password'
+url = 'https://icanhazip.com'
 
-proxy = f'http://{username}:{password}@proxy.proxyverse.io'
+
+http_proxy = 'http://USERNAME:PASS@proxy.proxyverse.io:9200'
+https_proxy = 'https://USERNAME:PASS@proxy.proxyverse.io:9200'
+
+proxyDict = { 
+              "http"  : http_proxy, 
+              "https" : https_proxy
+            }
   
-query = request.build_opener(request.ProxyHandler({'http': proxy, 'https': proxy}))
+r = requests.get(url, proxies=proxyDict)
 
-print(query.open(url).read())
+print (https_proxy)
+print(r.text)
