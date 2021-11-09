@@ -1,7 +1,7 @@
 <?php 
 $username = 'username'; 
 $password = 'password'; 
-$proxy = 'proxy.proxyverse.io'; 
+$proxy = 'proxy.proxyverse.io:9200'; 
 $target = curl_init('https://api.ipify.org/'); 
 curl_setopt($target, CURLOPT_RETURNTRANSFER, 1); 
 curl_setopt($target, CURLOPT_PROXY, $proxy); 
