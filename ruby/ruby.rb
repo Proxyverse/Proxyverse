@@ -2,7 +2,7 @@ require "uri"
 require 'net/http' 
 
 proxy_host = 'proxy.proxyverse.io' 
-proxy_port = 80 
+proxy_port = 9200 
 proxy_user = 'username' 
 proxy_pass = 'password' 
 
