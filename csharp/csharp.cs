@@ -19,7 +19,7 @@ class Program
     {
         string page = "https://api.ipify.org/";
 
-        var proxy = new WebProxy("proxy.proxyverse.io:80")
+        var proxy = new WebProxy("proxy.proxyverse.io:9200")
         {
             UseDefaultCredentials = false,
 
