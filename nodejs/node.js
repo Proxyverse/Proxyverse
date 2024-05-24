@@ -1,13 +1,27 @@
-require('request-promise') ( { 
+import fetch from 'node-fetch';
+import { HttpsProxyAgent } from 'https-proxy-agent';
 
-   url: 'https://ipinfo.io/ip', 
-   proxy: 'http://username:password@proxy.proxyverse.io:9200' 
+const proxyList = [
+  { host: 'proxy.proxyverse.io', port: 9200}];
 
-}).then( 
-   function(data ){ 
-      console.log(data); 
-    }, 
-    function(err){ 
-       console.error(err); 
-   } 
-);
+async function RotateProxy(proxyList, targetUrl) {
+  for (const proxy of proxyList) {
+    try {
+      //construct proxy URL  
+      const proxyUrl = `http://USERNAME:PASSWORD@${proxy.host}:${proxy.port}`;
+      //create proxy agent  
+      const proxyAgent = new HttpsProxyAgent(proxyUrl);
+
+      //make request using random proxy from array  
+      const response = await fetch(targetUrl, { agent: proxyAgent });
+      const html = await response.text();
+
+      console.log(html);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+}
+
+const targetUrl = 'https://ident.me/ip';
+await RotateProxy(proxyList, targetUrl);
