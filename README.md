@@ -1,6 +1,6 @@
 
 <p align="center">
-    <a href="https://proxyverse.io"><img src="https://media-exp1.licdn.com/dms/image/C4D16AQEvrbAts3TsPA/profile-displaybackgroundimage-shrink_200_800/0/1630370253671?e=1636588800&v=beta&t=Gadh_69tghSIM-1QrnBF3W6XwUhJbzu-zXhXcr0ibOQ" alt="Proxyverse Logo" width=50% ></a>
+    <a href="https://proxyverse.io"><img src="https://i.imgur.com/P8Zl5JA.png" alt="Proxyverse Logo" width=50% ></a>
   </a>
 </p>
 
